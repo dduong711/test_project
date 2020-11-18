@@ -1,0 +1,10 @@
+{% extends "organization/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Organization Detail{% endblock title %}
+
+{% block inner %}
+    <h1>Organization Detail</h1>
+    <p>name: {{ object.name }}</p>
+    <p>owner: {{ object.owner }}</p>
+{% endblock inner %}
